@@ -1,0 +1,780 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no">
+    <title>Men's Perfume | Haven</title>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <!-- NAVBAR   -->
+  <nav class="navbar navbar-expand-lg navbar-dark bg-dark py-3">
+    <div class="container">
+        <a class="navbar-brand" href="index.html">Haven | Perfume Collection</a>
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+          </button>
+        <div class="collapse navbar-collapse" id="navbarNav">
+            <ul class="navbar-nav ms-auto">
+                <li class="nav-item">
+                    <a class="nav-link" href="mens.html">Men's</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="womens.html">Women's</a>
+                </li>
+            </ul>
+            <form class="d-flex ms-3 position-relative" id="search-form">
+                <input class="form-control me-2 border-0 rounded-3" 
+                       type="search" 
+                       id="perfume-search"
+                       placeholder="Search perfumes..." 
+                       aria-label="Search"
+                       autocomplete="off">
+                <button class="btn btn-outline-light" type="submit">Search</button>
+                <div class="dropdown-menu w-100 p-0 position-absolute top-100 start-0 mt-1" 
+                     id="search-results"
+                     style="display: none; z-index: 1000; max-height: 400px; overflow-y: auto;">
+                    <!-- Results will appear here -->
+                </div>  
+            </form>
+            <ul class="navbar-nav navbar-collapse">
+                <li class="nav-item position-relative">
+                    <a class="nav-link px-2" href="#" title="Wishlist">
+                        <i class="fas fa-heart fa-lg"></i>
+                        <span id="wishlist-badge" 
+                             class="position-absolute top-0 start-100 translate-middle badge rounded-circle bg-gray-700 border border-light"
+                             data-initial-value="0">0</span>
+                    </a>
+                </li>
+                <li class="nav-item position-relative ms-3">
+                    <a class="nav-link px-2" href="#" title="Cart">
+                        <i class="fas fa-shopping-cart fa-lg"></i>
+                        <span id="cart-badge" 
+                             class="position-absolute top-0 start-100 translate-middle badge rounded-circle bg-gray-700 border border-light"
+                             data-initial-value="0">0</span>
+                    </a>
+                </li>
+            </ul>
+        </div>
+    </div>
+</nav>
+
+    <!-- Men's Perfume Grid -->
+    <div class="container mt-5">
+        <h2 class="text-center mb-4">Men's Perfume Collection</h2>
+        <div class="row">
+            <!-- Perfume 1 -->
+            <div class="col-md-4 mb-4">
+                <div class="card h-100 hover-effect">
+                    <img src="perfume-images/dior/dior_sauvage.webp" class="card-img-top" alt="Dior Sauvage">
+                    <div class="card-body">
+                        <h6 class="opacity">Dior</h6>
+                        <h3 class="card-title"><b>Sauvage</b></h3>
+                        <h7 class="card-title">Eau de Parfum Spray</h7>
+                        <p class="card-text">₱6,312 / 60 ml</p>
+                        <p class="card-text">⭐⭐⭐⭐☆</p>
+                        <a href="dior.html" class="btn btn-primary view-details">View Details</a>
+                    </div>
+                </div>
+            </div>
+            <!-- Perfume 2 -->
+            <div class="col-md-4 mb-4">
+                <div class="card h-100 hover-effect">
+                    <img src="perfume-images/ck/ck1.jfif" class="card-img-top" alt="Perfume 2">
+                    <div class="card-body">
+                        <h6 class="opacity">Calvin Klein</h6>
+                        <h3 class="card-title"><b>CK Be</b></h3>
+                        <h7 class="card-title">Eau de Toilette Spray</h7>
+                        <p class="card-text">₱1,500 / 100 ml</p>
+                        <p class="card-text">⭐⭐⭐⭐☆</p>
+                        <a href="calvin-klein.html" class="btn btn-primary view-details">View Details</a>
+                    </div>
+                </div>
+            </div>
+            <!-- Perfume 3 -->
+            <div class="col-md-4 mb-4">
+                <div class="card h-100 hover-effect">
+                    <img src="perfume-images/invictus/invi1.webp" class="card-img-top" alt="Perfume 3">
+                    <div class="card-body">
+                        
+                            <h6 class="opacity">Rabanne</h6>
+                            <h3 class="card-title"><b>Invictus</b></h3>
+                            <h7 class="card-title">Eau de Toilette Spray</h7>
+                            <p class="card-text">₱5,033 / 50 ml</p>
+                            <p class="card-text">⭐⭐⭐⭐☆</p>
+                            <a href="invictus.html" class="btn btn-primary view-details">View Details</a>
+                           
+                    </div>
+                </div>
+            </div>
+            <!-- Repeat for Perfumes 4 -->
+            <div class="col-md-4 mb-4">
+                <div class="card h-100 hover-effect">
+                    <img src="perfume-images/bleu/bleu4.jpg" class="card-img-top" alt="Perfume 4">
+                    <div class="card-body">
+                        <h6 class="opacity">Chanel</h6>
+                        <h3 class="card-title"><b>Bleu De Chanel</b></h3>
+                        <h7 class="card-title">Eau de Parfum Spray</h7>
+                        <p class="card-text">₱6,291 / 50 ml</p>
+                        <p class="card-text">⭐⭐⭐⭐⭐</p>
+                        <a href="bleu.html" class="btn btn-primary view-details">View Details</a>
+                    </div>
+                </div>
+            </div>
+            <!-- Repeat for Perfumes 5 -->
+            <div class="col-md-4 mb-4">
+                <div class="card h-100 hover-effect">
+                    <img src="perfume-images/stronger/stronger1.webp" class="card-img-top" alt="Perfume 4">
+                    <div class="card-body">
+                        <h6 class="opacity">Armani</h6>
+                        <h3 class="card-title"><b>Stronger with You Intensely</b></h3>
+                        <h7 class="card-title">Eau de Parfum Spray</h7>
+                        <p class="card-text">₱5,181 / 50 ml</p>
+                        <p class="card-text">⭐⭐⭐⭐⭐</p>
+                        <a href="stronger.html" class="btn btn-primary view-details">View Details</a>
+                    </div>
+                </div>
+            </div>
+            <!-- Repeat for Perfumes 6 -->
+            <div class="col-md-4 mb-4">
+                <div class="card h-100 hover-effect">
+                    <img src="perfume-images/one/one1.webp" class="card-img-top" alt="Perfume 4">
+                    <div class="card-body">
+                        <h6 class="opacity">Rabanne</h6>
+                        <h3 class="card-title"><b>1 Million</b></h3>
+                        <h7 class="card-title">Eau de Toilette Spray</h7>
+                        <p class="card-text">₱4,885 / 50 ml</p>
+                        <p class="card-text">⭐⭐⭐⭐☆</p>
+                        <a href="one.html" class="btn btn-primary view-details">View Details</a>
+                    </div>
+                </div>
+            </div>
+            <!-- Repeat for Perfumes 7 -->
+            <div class="col-md-4 mb-4">
+                <div class="card h-100 hover-effect">
+                    <img src="perfume-images/valen/valen1.webp" class="card-img-top" alt="Perfume 4">
+                    <div class="card-body">
+                        <h6 class="opacity">Valentino</h6>
+                        <h3 class="card-title"><b>Born In Roma Uomo Intense</b></h3>
+                        <h7 class="card-title">Eau de Parfum Spray</h7>
+                        <p class="card-text">₱5,551 / 50 ml</p>
+                        <p class="card-text">⭐⭐⭐⭐⭐</p>
+                        <a href="valentino.html" class="btn btn-primary view-details">View Details</a>
+                    </div>
+                </div>
+            </div>
+            <!-- Repeat for Perfumes 8 -->
+            <div class="col-md-4 mb-4">
+                <div class="card h-100 hover-effect">
+                    <img src="perfume-images/lemale/lemale1.avif" class="card-img-top" alt="Perfume 4">
+                    <div class="card-body">
+                        <h6 class="opacity">Jean Paul Gaultier</h6>
+                        <h3 class="card-title"><b>Le Male Elixir</b></h3>
+                        <h7 class="card-title">Parfum Spray</h7>
+                        <p class="card-text">₱6,439 / 75 ml</p>
+                        <p class="card-text">⭐⭐⭐⭐☆</p>
+                        <a href="lemale.html" class="btn btn-primary view-details">View Details</a>
+                    </div>
+                </div>
+            </div>
+            <!-- Repeat for Perfumes 9 -->
+            <div class="col-md-4 mb-4">
+                <div class="card h-100 hover-effect">
+                    <img src="perfume-images/swy/swy1.webp" class="card-img-top" alt="Perfume 4">
+                    <div class="card-body">
+                        <h6 class="opacity">Armani</h6>
+                        <h3 class="card-title"><b>Stronger With You</b></h3>
+                        <h7 class="card-title">Parfum Spray</h7>
+                        <p class="card-text">₱5,847 / 50 ml</p>
+                        <p class="card-text">⭐⭐⭐☆☆</p>
+                        <a href="swy.html" class="btn btn-primary view-details">View Details</a>
+                    </div>
+                </div>
+            </div>
+            <!-- Repeat for Perfumes 10 -->
+            <div class="col-md-4 mb-4">
+                <div class="card h-100 hover-effect">
+                    <img src="perfume-images/lemalep/lemalep1.webp" class="card-img-top" alt="Perfume 4">
+                    <div class="card-body">
+                        <h6 class="opacity">Jean Paul Gaultier</h6>
+                        <h3 class="card-title"><b>Le Male Le Parfum</b></h3>
+                        <h7 class="card-title">Eau de Parfum Spray</h7>
+                        <p class="card-text">₱5,995 / 75 ml</p>
+                        <p class="card-text">⭐⭐⭐⭐⭐</p>
+                        <a href="lemalep.html" class="btn btn-primary view-details">View Details</a>
+                    </div>
+                </div>
+            </div>
+            <!-- Repeat for Perfumes 11 -->
+            <div class="col-md-4 mb-4">
+                <div class="card h-100 hover-effect">
+                    <img src="perfume-images/eros/eros1.webp" class="card-img-top" alt="Perfume 4">
+                    <div class="card-body">
+                        <h6 class="opacity">Versace</h6>
+                        <h3 class="card-title"><b>Eros</b></h3>
+                        <h7 class="card-title">Eau de Parfum Spray</h7>
+                        <p class="card-text">₱5,477 / 50 ml</p>
+                        <p class="card-text">⭐⭐⭐⭐☆</p>
+                        <a href="eros.html" class="btn btn-primary view-details">View Details</a>
+                    </div>
+                </div>
+            </div>
+            <!-- Repeat for Perfumes 12 -->
+            <div class="col-md-4 mb-4">
+                <div class="card h-100 hover-effect">
+                    <img src="perfume-images/dylan/dylan1.webp" class="card-img-top" alt="Perfume 4">
+                    <div class="card-body">
+                        <h6 class="opacity">Versace</h6>
+                        <h3 class="card-title"><b>Dylan Blue</b></h3>
+                        <h7 class="card-title">Eau de Toilette Spray</h7>
+                        <p class="card-text">₱2,959 / 30 ml</p>
+                        <p class="card-text">⭐⭐⭐⭐⭐</p>
+                        <a href="dylan.html" class="btn btn-primary view-details">View Details</a>
+                    </div>
+                </div>
+            </div>
+            <!-- Repeat for Perfumes 13 -->
+            <div class="col-md-4 mb-4">
+                <div class="card h-100 hover-effect">
+                    <img src="perfume-images/dior-homme/homme1.webp" class="card-img-top" alt="Perfume 4">
+                    <div class="card-body">
+                        <h6 class="opacity">Dior</h6>
+                        <h3 class="card-title"><b>Dior Homme</b></h3>
+                        <h7 class="card-title">Eau de Toilette Spray</h7>
+                        <p class="card-text">₱5,551 / 50 ml</p>
+                        <p class="card-text">⭐⭐⭐⭐☆</p>
+                        <a href="dior-homme.html" class="btn btn-primary view-details">View Details</a>
+                    </div>
+                </div>
+            </div>
+            <!-- Repeat for Perfumes 14 -->
+            <div class="col-md-4 mb-4">
+                <div class="card h-100 hover-effect">
+                    <img src="perfume-images/wanted/wanted1.webp" class="card-img-top" alt="Perfume 4">
+                    <div class="card-body">
+                        <h6 class="opacity">Azzaro</h6>
+                        <h3 class="card-title"><b>Wanted</b></h3>
+                        <h7 class="card-title">Eau de Toilette Spray</h7>
+                        <p class="card-text">₱4,367 / 50 ml</p>
+                        <p class="card-text">⭐⭐⭐⭐⭐</p>
+                        <a href="wanted.html" class="btn btn-primary view-details">View Details</a>
+                    </div>
+                </div>
+            </div>
+            <!-- Repeat for Perfumes 15 -->
+            <div class="col-md-4 mb-4">
+                <div class="card h-100 hover-effect">
+                    <img src="perfume-images/guilty/guilty1.jpg" class="card-img-top" alt="Perfume 4">
+                    <div class="card-body">
+                        <h6 class="opacity">Gucci</h6>
+                        <h3 class="card-title"><b>Guilty Pour Homme</b></h3>
+                        <h7 class="card-title">Eau de Toilette Spray</h7>
+                        <p class="card-text">₱5,107 / 50 ml</p>
+                        <p class="card-text">⭐⭐⭐⭐☆</p>
+                        <a href="guilty.html" class="btn btn-primary view-details">View Details</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+
+    <a href="index.html" class="back-button mt-3">
+        <i class="fas fa-arrow-left"></i> Back to Homepage
+    </a>
+
+    <!-- FOOTER -->
+  <footer style="font-family: 'Helvetica Neue', Arial, sans-serif; background-color: #1a1a1a; color: #e0e0e0; padding: 80px 0; border-top: 1px solid #333;">
+    <div class="footer-container" style="max-width: 1200px; margin: 0 auto; display: flex; flex-wrap: wrap; gap: 80px; padding: 0 40px;">
+        <!-- Contact Form Section -->
+        <div class="footer-section" style="flex: 1; min-width: 300px;">
+            <h3 style="font-size: 1.3rem; margin-bottom: 32px; color: #ffffff; font-weight: 400; text-transform: uppercase; letter-spacing: 1px;">Get in Touch</h3>
+            <form id="contactForm" style="display: flex; flex-direction: column; gap: 24px;">
+                <input type="text" placeholder="Your Name" required style="padding: 16px; border: 1px solid #333; border-radius: 2px; background: #2a2a2a; font-size: 0.95rem; color: #e0e0e0; transition: all 0.3s;"
+                    onfocus="this.style.borderColor='#555'; this.style.background='#333'" 
+                    onblur="this.style.borderColor='#333'; this.style.background='#2a2a2a'">
+
+                <input type="email" placeholder="Your Email" required style="padding: 16px; border: 1px solid #333; border-radius: 2px; background: #2a2a2a; font-size: 0.95rem; color: #e0e0e0; transition: all 0.3s;"
+                    onfocus="this.style.borderColor='#555'; this.style.background='#333'" 
+                    onblur="this.style.borderColor='#333'; this.style.background='#2a2a2a'">
+
+                <textarea placeholder="Your Message" required style="padding: 16px; border: 1px solid #333; border-radius: 2px; min-height: 140px; background: #2a2a2a; font-size: 0.95rem; color: #e0e0e0; transition: all 0.3s;"
+                    onfocus="this.style.borderColor='#555'; this.style.background='#333'" 
+                    onblur="this.style.borderColor='#333'; this.style.background='#2a2a2a'"></textarea>
+
+                <div style="display: flex; align-items: center; gap: 20px;">
+                    <button type="submit" style="padding: 16px; background-color: #333; color: white; border: 1px solid #444; border-radius: 2px; cursor: pointer; font-size: 0.95rem; letter-spacing: 1px; transition: all 0.3s; min-width: 180px;"
+                        onmouseover="this.style.backgroundColor='#444'; this.style.borderColor='#555'" 
+                        onmouseout="this.style.backgroundColor='#333'; this.style.borderColor='#444'">
+                        Submit
+                    </button>
+                    <div id="submitConfirmation" style="color: #4CAF50; font-size: 0.9rem; opacity: 0; transition: opacity 0.3s ease;"></div>
+                </div>
+            </form>
+        </div>
+        
+        <!-- Contact Information Section -->
+        <div class="footer-section" style="flex: 1; min-width: 300px;">
+            <h3 style="font-size: 1.3rem; margin-bottom: 32px; color: #ffffff; font-weight: 400; text-transform: uppercase; letter-spacing: 1px;">Contact Information</h3>
+            <address style="font-style: normal; line-height: 1.8; font-size: 1rem; color: #b0b0b0;">
+                <div style="display: flex; align-items: flex-start; margin-bottom: 24px;">
+                    <i class="fas fa-map-marker-alt" style="margin-right: 16px; color: #666; font-size: 1rem; margin-top: 4px; min-width: 16px;"></i>
+                    <p>123 Business Avenue<br>Suite 400<br>San Francisco, CA 94107</p>
+                </div>
+                <div style="display: flex; align-items: center; margin-bottom: 24px;">
+                    <i class="fas fa-phone" style="margin-right: 16px; color: #666; font-size: 1rem; min-width: 16px;"></i>
+                    <p>(415) 555-0123</p>
+                </div>
+                <div style="display: flex; align-items: center; margin-bottom: 32px;">
+                    <i class="fas fa-envelope" style="margin-right: 16px; color: #666; font-size: 1rem; min-width: 16px;"></i>
+                    <p>havenperfumecollection@yourcompany.com</p>
+                </div>
+            </address>
+            
+            <div style="margin-top: 48px;">
+                <h4 style="font-size: 1rem; margin-bottom: 20px; color: #666; font-weight: 400; letter-spacing: 1px; text-transform: uppercase;">Follow Us</h4>
+                <div class="social-links" style="display: flex; gap: 20px;">
+                    <a href="https://www.linkedin.com/feed/" style="color: #666; text-decoration: none; font-size: 1.2rem; transition: color 0.3s;" onmouseover="this.style.color='#ffffff'" onmouseout="this.style.color='#666'"><i class="fab fa-linkedin-in"></i></a>
+                    <a href="https://x.com/Lawrence_1044" style="color: #666; text-decoration: none; font-size: 1.2rem; transition: color 0.3s;" onmouseover="this.style.color='#ffffff'" onmouseout="this.style.color='#666'"><i class="fab fa-twitter"></i></a>
+                    <a href="https://www.instagram.com/rorensdave/" style="color: #666; text-decoration: none; font-size: 1.2rem; transition: color 0.3s;" onmouseover="this.style.color='#ffffff'" onmouseout="this.style.color='#666'"><i class="fab fa-instagram"></i></a>
+                </div>
+            </div>
+        </div>
+    </div>
+    
+    <!-- Copyright -->
+    <div class="copyright-section" style="max-width: 1200px; margin: 80px auto 0; padding-top: 32px; border-top: 1px solid #333; text-align: center; color: #666; font-size: 0.9rem; letter-spacing: 0.5px;">
+        <p>&copy; <script>document.write(new Date().getFullYear())</script> Your Company. All rights reserved.</p>
+        <ul class="footer-links" style="list-style: none; display: flex; justify-content: center; gap: 20px; padding: 0;">
+            <li><a href="aboutus.html" style="color: #e0e0e0; text-decoration: none; transition: color 0.3s;" onmouseover="this.style.color='#ffffff'" onmouseout="this.style.color='#e0e0e0'">About Us</a></li>
+        </ul>
+    </div>
+
+    <script>
+        document.addEventListener('DOMContentLoaded', function() {
+            // Initialize cart and wishlist from localStorage or create empty arrays
+            let cart = JSON.parse(localStorage.getItem('cart')) || [];
+            let wishlist = JSON.parse(localStorage.getItem('wishlist')) || [];
+            
+            // Update badge counts on page load
+            updateBadges();
+            
+            // Add cart/wishlist event listeners
+            addCartWishlistListeners();
+    
+            // Function to update badge counts
+            function updateBadges() {
+                const cartBadge = document.getElementById('cart-badge');
+                const wishlistBadge = document.getElementById('wishlist-badge');
+                
+                if (cartBadge) cartBadge.textContent = cart.length;
+                if (wishlistBadge) wishlistBadge.textContent = wishlist.length;
+                
+                // Store updated lists in localStorage
+                localStorage.setItem('cart', JSON.stringify(cart));
+                localStorage.setItem('wishlist', JSON.stringify(wishlist));
+            }
+            
+            // Function to add cart/wishlist event listeners
+            function addCartWishlistListeners() {
+                const cartIcon = document.querySelector('.fa-shopping-cart');
+                const wishlistIcon = document.querySelector('.fa-heart');
+                
+                if (cartIcon) {
+                    cartIcon.closest('a').addEventListener('click', function(e) {
+                        e.preventDefault();
+                        showCartModal();
+                    });
+                }
+                
+                if (wishlistIcon) {
+                    wishlistIcon.closest('a').addEventListener('click', function(e) {
+                        e.preventDefault();
+                        showWishlistModal();
+                    });
+                }
+            }
+            
+            // Function to show notification
+            function showNotification(message) {
+                let notification = document.getElementById('notification');
+                if (!notification) {
+                    notification = document.createElement('div');
+                    notification.id = 'notification';
+                    notification.style.position = 'fixed';
+                    notification.style.bottom = '20px';
+                    notification.style.right = '20px';
+                    notification.style.padding = '10px 20px';
+                    notification.style.backgroundColor = '#333';
+                    notification.style.color = 'white';
+                    notification.style.borderRadius = '5px';
+                    notification.style.zIndex = '10000';
+                    notification.style.transition = 'opacity 0.5s';
+                    document.body.appendChild(notification);
+                }
+                
+                notification.textContent = message;
+                notification.style.opacity = '1';
+                
+                // Hide after 3 seconds
+                setTimeout(() => {
+                    notification.style.opacity = '0';
+                }, 3000);
+            }
+            
+            // Function to show cart modal
+            function showCartModal() {
+                const modalContent = `
+                    <div class="modal fade" id="cartModal" tabindex="-1" aria-hidden="true">
+                        <div class="modal-dialog modal-dialog-centered">
+                            <div class="modal-content">
+                                <div class="modal-header">
+                                    <h5 class="modal-title">Your Shopping Cart</h5>
+                                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                                </div>
+                                <div class="modal-body">
+                                    ${cart.length === 0 ? 
+                                        '<p>Your cart is empty</p>' : 
+                                        cart.map(item => `
+                                            <div class="d-flex align-items-center mb-3">
+                                                <img src="${item.image}" alt="${item.name}" style="width: 60px; height: 60px; object-fit: cover;" class="me-3">
+                                                <div class="flex-grow-1">
+                                                    <h6 class="mb-0">${item.name}</h6>
+                                                    <small>$${item.price} x ${item.quantity}</small>
+                                                </div>
+                                                <button class="btn btn-sm btn-outline-danger remove-from-cart" data-id="${item.id}">
+                                                    <i class="fas fa-trash"></i>
+                                                </button>
+                                            </div>
+                                        `).join('')}
+                                </div>
+                                <div class="modal-footer">
+                                    <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Continue Shopping</button>
+                                    ${cart.length > 0 ? '<button type="button" class="btn btn-primary">Checkout</button>' : ''}
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                `;
+                
+                // Add modal to DOM
+                document.body.insertAdjacentHTML('beforeend', modalContent);
+                
+                // Initialize Bootstrap modal
+                const modal = new bootstrap.Modal(document.getElementById('cartModal'));
+                modal.show();
+                
+                // Handle removal of items
+                document.querySelectorAll('.remove-from-cart').forEach(button => {
+                    button.addEventListener('click', function() {
+                        const itemId = this.getAttribute('data-id');
+                        cart = cart.filter(item => item.id !== itemId);
+                        updateBadges();
+                        modal.hide();
+                        document.getElementById('cartModal').remove();
+                        showCartModal(); // Refresh modal
+                    });
+                });
+                
+                // Clean up when modal is closed
+                document.getElementById('cartModal').addEventListener('hidden.bs.modal', function() {
+                    this.remove();
+                });
+            }
+            
+            // Function to show wishlist modal
+            function showWishlistModal() {
+                const modalContent = `
+                    <div class="modal fade" id="wishlistModal" tabindex="-1" aria-hidden="true">
+                        <div class="modal-dialog modal-dialog-centered">
+                            <div class="modal-content">
+                                <div class="modal-header">
+                                    <h5 class="modal-title">Your Wishlist</h5>
+                                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                                </div>
+                                <div class="modal-body">
+                                    ${wishlist.length === 0 ? 
+                                        '<p>Your wishlist is empty</p>' : 
+                                        wishlist.map(item => `
+                                            <div class="d-flex align-items-center mb-3">
+                                                <img src="${item.image}" alt="${item.name}" style="width: 60px; height: 60px; object-fit: cover;" class="me-3">
+                                                <div class="flex-grow-1">
+                                                    <h6 class="mb-0">${item.name}</h6>
+                                                    <small>$${item.price}</small>
+                                                </div>
+                                                <button class="btn btn-sm btn-outline-danger remove-from-wishlist" data-id="${item.id}">
+                                                    <i class="fas fa-trash"></i>
+                                                </button>
+                                                <button class="btn btn-sm btn-outline-success ms-2 move-to-cart" data-id="${item.id}">
+                                                    <i class="fas fa-cart-plus"></i>
+                                                </button>
+                                            </div>
+                                        `).join('')}
+                                </div>
+                                <div class="modal-footer">
+                                    <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                `;
+                
+                // Add modal to DOM
+                document.body.insertAdjacentHTML('beforeend', modalContent);
+                
+                // Initialize Bootstrap modal
+                const modal = new bootstrap.Modal(document.getElementById('wishlistModal'));
+                modal.show();
+                
+                // Handle removal of items
+                document.querySelectorAll('.remove-from-wishlist').forEach(button => {
+                    button.addEventListener('click', function() {
+                        const itemId = this.getAttribute('data-id');
+                        wishlist = wishlist.filter(item => item.id !== itemId);
+                        updateBadges();
+                        modal.hide();
+                        document.getElementById('wishlistModal').remove();
+                        showWishlistModal(); // Refresh modal
+                    });
+                });
+                
+                // Handle moving items to cart
+                document.querySelectorAll('.move-to-cart').forEach(button => {
+                    button.addEventListener('click', function() {
+                        const itemId = this.getAttribute('data-id');
+                        const item = wishlist.find(item => item.id === itemId);
+                        
+                        if (item) {
+                            addToCart({...item, quantity: 1});
+                            wishlist = wishlist.filter(wishItem => wishItem.id !== itemId);
+                            updateBadges();
+                            modal.hide();
+                            document.getElementById('wishlistModal').remove();
+                            showWishlistModal(); // Refresh modal
+                        }
+                    });
+                });
+                
+                // Clean up when modal is closed
+                document.getElementById('wishlistModal').addEventListener('hidden.bs.modal', function() {
+                    this.remove();
+                });
+            }
+            
+            // Global functions to add items
+            window.addToCart = function(perfume) {
+                // Check if item already exists in cart
+                const existingItem = cart.find(item => item.id === perfume.id);
+                
+                if (existingItem) {
+                    existingItem.quantity += perfume.quantity || 1;
+                } else {
+                    cart.push({
+                        id: perfume.id,
+                        name: perfume.name,
+                        price: perfume.price,
+                        image: perfume.image,
+                        quantity: perfume.quantity || 1
+                    });
+                }
+                
+                updateBadges();
+                showNotification('Added to cart!');
+            };
+            
+            window.addToWishlist = function(perfume) {
+                // Check if item already exists in wishlist
+                const existingItem = wishlist.find(item => item.id === perfume.id);
+                
+                if (!existingItem) {
+                    wishlist.push({
+                        id: perfume.id,
+                        name: perfume.name,
+                        price: perfume.price,
+                        image: perfume.image
+                    });
+                    
+                    updateBadges();
+                    showNotification('Added to wishlist!');
+                } else {
+                    showNotification('Already in wishlist!');
+                }
+            };
+    
+            // Enhance perfume cards with cart/wishlist buttons
+            function enhancePerfumeCards() {
+                document.querySelectorAll('.perfume-card').forEach(card => {
+                    const addToCartBtn = card.querySelector('.add-to-cart');
+                    const addToWishlistBtn = card.querySelector('.add-to-wishlist');
+                    
+                    if (addToCartBtn) {
+                        addToCartBtn.addEventListener('click', function() {
+                            const perfumeData = {
+                                id: card.dataset.id || Math.random().toString(36).substr(2, 9),
+                                name: card.querySelector('.card-title')?.textContent?.trim() || 'Unknown Perfume',
+                                price: parseFloat(card.querySelector('.price')?.textContent?.replace('$', '')) || 0,
+                                image: card.querySelector('img')?.src || ''
+                            };
+                            addToCart(perfumeData);
+                        });
+                    }
+                    
+                    if (addToWishlistBtn) {
+                        addToWishlistBtn.addEventListener('click', function() {
+                            const perfumeData = {
+                                id: card.dataset.id || Math.random().toString(36).substr(2, 9),
+                                name: card.querySelector('.card-title')?.textContent?.trim() || 'Unknown Perfume',
+                                price: parseFloat(card.querySelector('.price')?.textContent?.replace('$', '')) || 0,
+                                image: card.querySelector('img')?.src || ''
+                            };
+                            addToWishlist(perfumeData);
+                        });
+                    }
+                });
+            }
+    
+            // Enhance any existing perfume cards on page load
+            enhancePerfumeCards();
+    
+            // Search Functionality (without gender labeling)
+            const checkNavbarLoaded = setInterval(function() {
+                const searchForm = document.getElementById('search-form');
+                if (searchForm) {
+                    clearInterval(checkNavbarLoaded);
+                    initSearch();
+                }
+            }, 100);
+    
+            function initSearch() {
+                const searchInput = document.getElementById('perfume-search');
+                const searchResults = document.getElementById('search-results');
+                let allPerfumes = [];
+    
+                function getPerfumeData(card) {
+                    return {
+                        id: card.dataset.id || Math.random().toString(36).substr(2, 9),
+                        name: card.querySelector('.card-title b')?.textContent?.trim() || 
+                              card.querySelector('.card-title')?.textContent?.trim() || 
+                              'Unknown',
+                        brand: card.querySelector('.opacity')?.textContent?.trim() || 
+                               'Unknown',
+                        price: parseFloat(card.querySelector('.price')?.textContent?.replace('$', '')) || 0,
+                        image: card.querySelector('img')?.src || '',
+                        link: card.querySelector('a')?.href || '#'
+                    };
+                }
+    
+               
+    
+                function showSearchResults(term) {
+                    searchResults.innerHTML = '';
+                    term = term.toLowerCase().trim();
+                    
+                    if (term.length < 2) {
+                        searchResults.style.display = 'none';
+                        return;
+                    }
+                    
+                    const matches = allPerfumes.filter(perfume => 
+                        perfume.name.toLowerCase().includes(term) || 
+                        perfume.brand.toLowerCase().includes(term)
+                    ).slice(0, 5);
+                    
+                    if (matches.length > 0) {
+                        matches.forEach(perfume => {
+                            const item = document.createElement('a');
+                            item.className = 'dropdown-item d-flex justify-content-between align-items-center py-2 px-3';
+                            item.href = perfume.link;
+                            item.innerHTML = `
+                                <div>
+                                    <strong>${perfume.name}</strong>
+                                    <div class="text-muted small">${perfume.brand}</div>
+                                </div>
+                                <button class="btn btn-sm btn-outline-primary add-to-cart-search" 
+                                        data-id="${perfume.id}"
+                                        data-name="${perfume.name}"
+                                        data-price="${perfume.price}"
+                                        data-image="${perfume.image}">
+                                    <i class="fas fa-cart-plus"></i>
+                                </button>
+                            `;
+                            searchResults.appendChild(item);
+                        });
+                        
+                        // Add event listeners to search result buttons
+                        document.querySelectorAll('.add-to-cart-search').forEach(button => {
+                            button.addEventListener('click', function(e) {
+                                e.preventDefault();
+                                e.stopPropagation();
+                                addToCart({
+                                    id: this.dataset.id,
+                                    name: this.dataset.name,
+                                    price: parseFloat(this.dataset.price),
+                                    image: this.dataset.image
+                                });
+                            });
+                        });
+                    } else {
+                        const noResults = document.createElement('div');
+                        noResults.className = 'dropdown-item text-muted py-2 px-3';
+                        noResults.textContent = `No results found for "${term}"`;
+                        searchResults.appendChild(noResults);
+                    }
+                    
+                    searchResults.style.display = 'block';
+                }
+    
+                // Initialize search
+                searchInput.addEventListener('focus', async () => {
+                    if (allPerfumes.length === 0) {
+                        await loadAllPerfumes();
+                    }
+                });
+                
+                let typingTimer;
+                searchInput.addEventListener('input', (e) => {
+                    clearTimeout(typingTimer);
+                    typingTimer = setTimeout(() => {
+                        showSearchResults(e.target.value);
+                    }, 300);
+                });
+                
+                document.addEventListener('click', (e) => {
+                    if (!e.target.closest('#search-form')) {
+                        searchResults.style.display = 'none';
+                    }
+                });
+                
+                document.getElementById('search-form').addEventListener('submit', (e) => {
+                    e.preventDefault();
+                    if (searchResults.firstChild?.tagName === 'A') {
+                        window.location.href = searchResults.firstChild.href;
+                    }
+                });
+            }
+            
+            // SUBMISSION FUNCTION
+            document.getElementById('contactForm').addEventListener('submit', function(e) {
+                e.preventDefault();
+    
+                const confirmation = document.getElementById('submitConfirmation');
+                confirmation.textContent = 'Submitted successfully';
+                confirmation.style.opacity = '1';
+    
+                this.reset();
+    
+                setTimeout(() => {
+                    confirmation.style.opacity = '0';
+                    setTimeout(() => confirmation.textContent = '', 300);
+                }, 3000);
+            });
+        }); // This closes the DOMContentLoaded event listener
+    </script>
+    
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+</body>
+</html>
